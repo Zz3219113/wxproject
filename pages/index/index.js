@@ -9,6 +9,11 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  jumpPage:function(){
+    wx.navigateTo({
+      url:'food/food',
+    })
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({

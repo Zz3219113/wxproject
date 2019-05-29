@@ -1,13 +1,15 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<i-card title="食堂1" extra=" " thumb="index-selected.png" bindtap="jumpPage">
+    <view slot="content">xx食堂</view>
+    <view slot="footer"> </view>
+</i-card>
+
+<i-card title="食堂2" extra=" " thumb="index-selected.png" bindtap="jumpPage">
+    <view slot="content">xx食堂</view>
+    <view slot="footer"> </view>
+</i-card>
+
+<i-card title="食堂3" extra=" " thumb="index-selected.png" bindtap="jumpPage">
+    <view slot="content">xx食堂</view>
+    <view slot="footer"> </view>
+</i-card>
