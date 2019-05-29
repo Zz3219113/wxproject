@@ -1,0 +1,25 @@
+<!--pages/order/order.wxml-->
+<view class='topTabSwiper'>
+  <view class='topTab {{curIndex == 0 ? "topTabSelected" : ""}}' data-index = "0" bindtap='bindtopTap'>未接受</view>
+  <view class='topTab {{curIndex == 1 ? "topTabSelected" : ""}}' data-index = "1" bindtap='bindtopTap'>派送中</view>
+  <view class='topTab {{curIndex == 2 ? "topTabSelected" : ""}}' data-index = "2" bindtap='bindtopTap'>已完成</view>
+</view>
+
+<scroll-view class='container{{curIndex == 0 ? "" : "-hidden"}}'>
+  <view id= 'top'>1</view>
+  <block>
+  </block>
+  <view id= 'buttom'></view>
+</scroll-view>
+<scroll-view class='container{{curIndex == 1 ? "" : "-hidden"}}'>
+  <view id= 'top'>2</view>
+  <block>
+  </block>
+  <view id= 'buttom'></view>
+</scroll-view>
+<scroll-view class='container{{curIndex == 2 ? "" : "-hidden"}}'>
+  <view id= 'top'>12</view>
+  <block>
+  </block>
+  <view id= 'buttom'></view>
+</scroll-view>

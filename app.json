@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/orders/orders",
+    "pages/my/my",
+    "pages/index/index",
+    "pages/take/take"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#00adb5",
+    "navigationBarTitleText": "弟弟带饭",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#b0b0b0",
+    "backgroundColor": "#fffffff",
+    "selectedColor": "#00adb5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "点饭",
+        "iconPath": "pages/icons/index.png",
+        "selectedIconPath": "pages/icons/index-selected.png"
+      },
+      {
+        "pagePath": "pages/take/take",
+        "text": "带饭",
+        "iconPath": "pages/icons/take.png",
+        "selectedIconPath": "pages/icons/take-selected.png"
+      },
+      {
+        "pagePath": "pages/orders/orders",
+        "text": "订单",
+        "iconPath": "pages/icons/order.png",
+        "selectedIconPath": "pages/icons/order-selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/icons/my.png",
+        "selectedIconPath": "pages/icons/my-selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

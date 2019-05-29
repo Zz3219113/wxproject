@@ -1,0 +1,24 @@
+<!--pages/my/my.wxml-->
+<view>
+  <block wx:if ="{{!hasUserInfo}}">
+    <view class='header' bindtap='ToLog'>      
+      <image class='userImg' src='../icons/unlogin.jpg' mode='cover'></image>
+      <view class='userName'>登录</view></view>
+  </block>
+  <block wx:else>
+    <view class='header'>
+      <image class='userImg' src="{{userInfo.avatarUrl}}" mode='cover'></image>
+      <view class='userName'>{{userInfo.nickName}}</view>
+    </view>
+  </block>
+
+  <view class='container'>
+    <view class = 'content'>123</view>
+    <view class = 'content'>123</view>
+    <view class = 'content'>123</view>
+    <view class = 'content'>123</view>
+    <view class = 'content'>123</view>
+    <view class='signOut' bindtap='signOut'>退出账号</view>
+  </view>
+
+</view>

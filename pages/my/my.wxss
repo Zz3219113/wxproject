@@ -1,0 +1,48 @@
+/* pages/my/my.wxss */
+page{
+  font-size: 30rpx;
+  color: #222831;
+  background-color: #eeeeee; 
+}
+
+.header
+{
+  width : 100%;
+  height : 180rpx;
+  display: flex;
+  align-items : center;
+  background-color: #00adb5;
+}
+
+.header .userImg{
+  height: 128rpx;
+  width: 128rpx;
+  margin: 10rpx 10rpx;
+  border-radius: 128rpx;
+  border : 8rpx solid #00d6de;
+}
+
+.header .userName{
+  font-size: 40rpx;
+  text-align: center;
+  color: #eeeeee;
+}
+
+.container{
+  margin: 20rpx 0;
+}
+
+.container .content,.container .signOut{
+  width: 100%;
+  background: white;
+  height: 70rpx;
+  line-height: 70rpx;
+  padding-left: 15rpx;
+  margin: 5rpx; 
+}
+
+.container .signOut
+{
+  margin: 20rpx;
+  text-align: center;
+}
