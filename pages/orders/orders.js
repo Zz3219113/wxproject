@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    curIndex : 0
+    curIndex : 0,
+    order_undo : [],
+    order_doing : [],
+    order_done : []
   },
   /**
    * 生命周期函数--监听页面加载

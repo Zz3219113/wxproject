@@ -10,6 +10,12 @@
 
 page{
   font-size: 30rpx;
-  color: #222831;
-  background-color: #eeeeee; 
+  color: #393e46;
+}
+
+.divider
+{
+  height: 2rpx;
+  width: 100%;
+  border-bottom: 2rpx solid #b0b0b0;
 }

@@ -6,20 +6,29 @@
 </view>
 
 <scroll-view class='container{{curIndex == 0 ? "" : "-hidden"}}'>
-  <view id= 'top'>1</view>
+  <view id= 'top'></view>
   <block>
-  </block>
-  <view id= 'buttom'></view>
-</scroll-view>
-<scroll-view class='container{{curIndex == 1 ? "" : "-hidden"}}'>
-  <view id= 'top'>2</view>
-  <block>
-  </block>
-  <view id= 'buttom'></view>
-</scroll-view>
-<scroll-view class='container{{curIndex == 2 ? "" : "-hidden"}}'>
-  <view id= 'top'>12</view>
-  <block>
+  <view class='order'>
+    <view class='header'>
+      <view class='camtingInfo'>
+        <image class='img' src='../icons/unlogin.jpg' mode='cover'></image>
+        <view class='cantingName'>理工餐厅</view>
+        <image class='arrowhead' src='../icons/arrow.png' mode='cover'></image>
+      </view>
+      <view class='orderState'>订单派送中</view>
+    </view>
+    <view class='divider' style='margin-left:100rpx;'></view>
+    <view class='content'>
+      <view class='item'>
+        <view class='itemName'>黄焖鸡米饭</view>
+        <view class='itemNum'>×1</view>
+      </view>
+    </view>
+    <view class='last'>
+      <view class='flex-price'>共1份菜品实付17元</view>
+      <view class='flex-buttom'>再来一单</view>
+    </view>
+  </view>
   </block>
   <view id= 'buttom'></view>
 </scroll-view>
