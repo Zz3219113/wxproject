@@ -4,14 +4,27 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    imgUrls: [
+      {
+        link: '/pages/my/my',
+        url: '../icons/my-selected.png'
+      }, {
+        link: '/pages/orders/orders',
+        url: '../icons/order-selected.png'
+      }, {
+        link: '/pages/take/take',
+        url: '../icons/take-selected.png'
+      }
+    ],
+    indicatorDots: true,  //小点
+    autoplay: true,  //是否自动轮播
+    interval: 3000,  //间隔时间
+    duration: 3000,  //滑动时间
+    addressA: "填写地址",
   },
   jumpPage:function(){
     wx.navigateTo({
-      url:'food/food',
+      url:'../shop/shop',
     })
   },
   //事件处理函数
@@ -48,6 +61,10 @@ Page({
       })
     }
   },
+  onShow: function () {
+    
+  },
+
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo

@@ -1,14 +1,16 @@
-// pages/order/order.js
+// pages/fillAddress/fillAddress.js
+const app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    curIndex : 0,
-    order_undo : [],
-    order_doing : [],
-    order_done : []
+    addressT: ' ',
+  },
+  handleClick() {
+   
   },
   /**
    * 生命周期函数--监听页面加载
@@ -35,10 +37,7 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    const that = this
-    that.setData({
-      curIndex: 0
-    })
+
   },
 
   /**
@@ -67,28 +66,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  bindchange : function(e)
-  {
-    const that = this
-    that.setData({
-      curIndex: e.detail.current
-    })
-  },
-
-  bindtopTap : function(e)
-  {
-    const that = this
-    if (that.data.curIndex == e.target.dataset.current)
-    {
-      return false;
-    }
-    else
-    {
-      that.setData({
-        curIndex: e.target.dataset.index
-      })
-    }
   }
 })

@@ -1,15 +1,47 @@
 <!--index.wxml-->
-<i-card title="食堂1" extra=" " thumb="index-selected.png" bindtap="jumpPage">
+
+<i-cell title="{{addressA}}" is-link url="/pages/fillAddress/fillAddress">
+        <i-icon type="coordinates" slot="icon" />
+</i-cell>
+
+<view class="weui-search-bar">
+   <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="想吃点什么？" value="{{SearchData.value}}" bindinput='SearchInput' bindconfirm="SearchConfirm" />
+      <view class="weui-icon-clear" wx:if="{{SearchData.value.length > 0}}" bindtap="SearchClear">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+  </view>
+    <view class="weui-search-bar__cancel-btn" bindtap="SearchConfirm">
+         <text wx:if="{{SearchData.value.length>0}}" data-key='search'>搜索</text>
+         <text wx:else data-key='back'>取消</text>
+    </view>
+</view>
+
+<swiper indicator-dots="{{indicatorDots}}"  
+           autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">  
+         <block wx:for="{{imgUrls}}">  
+           <swiper-item>  
+              <navigator url="{{item.link}}" hover-class="navigator-hover">  
+               <image src="{{item.url}}" class="slide-image" width="355" height="150"/>  
+              </navigator>  
+           </swiper-item>  
+         </block>  
+ </swiper>  
+
+<i-card full title="食堂1" extra=" " thumb="index-selected.png" bindtap="jumpPage">
     <view slot="content">xx食堂</view>
     <view slot="footer"> </view>
 </i-card>
 
-<i-card title="食堂2" extra=" " thumb="index-selected.png" bindtap="jumpPage">
+<i-card full title="食堂2" extra=" " thumb="index-selected.png" bindtap="jumpPage">
     <view slot="content">xx食堂</view>
     <view slot="footer"> </view>
 </i-card>
 
-<i-card title="食堂3" extra=" " thumb="index-selected.png" bindtap="jumpPage">
+<i-card full title="食堂3" extra=" " thumb="index-selected.png" bindtap="jumpPage">
     <view slot="content">xx食堂</view>
     <view slot="footer"> </view>
 </i-card>

@@ -3,7 +3,9 @@
     "pages/orders/orders",
     "pages/my/my",
     "pages/index/index",
-    "pages/take/take"
+    "pages/take/take",
+    "pages/fillAddress/fillAddress",
+    "pages/shop/shop"
   ],
   "window": {
     "navigationBarBackgroundColor": "#00adb5",

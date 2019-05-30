@@ -1,0 +1,4 @@
+<!--pages/fillAddress/fillAddress.wxml-->
+<i-input value="{{ addressT }}" placeholder="请输入收货地址" />
+
+<i-button bind:click="handleClick" type="success">提交</i-button>
